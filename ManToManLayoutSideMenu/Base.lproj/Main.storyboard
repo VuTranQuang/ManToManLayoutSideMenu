@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Fod-B1-W7v">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +12,142 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ManToManLayoutSideMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="arc-d8-5Yq">
+                                <rect key="frame" x="0.0" y="64" width="375" height="100"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ppn-RL-EjW">
+                                        <rect key="frame" x="4" y="0.0" width="367" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvs-SM-phn" customClass="Button" customModule="ManToManLayoutSideMenu" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="122.5" height="100"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onClickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FZc-7R-cxo"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pg3-zx-k5z" customClass="Button" customModule="ManToManLayoutSideMenu" customModuleProvider="target">
+                                                <rect key="frame" x="122.5" y="0.0" width="122" height="100"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onClickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Vd-rS-sB3"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZf-7X-3ek" customClass="Button" customModule="ManToManLayoutSideMenu" customModuleProvider="target">
+                                                <rect key="frame" x="244.5" y="0.0" width="122.5" height="100"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onClickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JhK-b1-FKj"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ppn-RL-EjW" firstAttribute="top" secondItem="arc-d8-5Yq" secondAttribute="top" id="FRh-7t-q5S"/>
+                                    <constraint firstAttribute="height" constant="100" id="Hh0-ay-2gZ"/>
+                                    <constraint firstItem="ppn-RL-EjW" firstAttribute="leading" secondItem="arc-d8-5Yq" secondAttribute="leading" constant="4" id="LNe-tY-kI9"/>
+                                    <constraint firstAttribute="bottom" secondItem="ppn-RL-EjW" secondAttribute="bottom" id="dX6-k2-HsC"/>
+                                    <constraint firstAttribute="trailing" secondItem="ppn-RL-EjW" secondAttribute="trailing" constant="4" id="mrM-2w-8J9"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="arc-d8-5Yq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="AHj-h0-XCH"/>
+                            <constraint firstItem="arc-d8-5Yq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="C46-Fz-doN"/>
+                            <constraint firstItem="arc-d8-5Yq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yYh-hy-bFG"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Pz1-La-IRu"/>
+                    <connections>
+                        <outlet property="headerView" destination="arc-d8-5Yq" id="YdI-22-GYS"/>
+                        <outlet property="popUpView" destination="Yng-xH-ImC" id="8zS-Dp-HVn"/>
+                        <outletCollection property="buttonColection" destination="qvs-SM-phn" collectionClass="NSMutableArray" id="XTc-bb-Vjy"/>
+                        <outletCollection property="buttonColection" destination="pg3-zx-k5z" collectionClass="NSMutableArray" id="L47-cQ-jpg"/>
+                        <outletCollection property="buttonColection" destination="CZf-7X-3ek" collectionClass="NSMutableArray" id="4kG-7O-SUV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="Yng-xH-ImC" customClass="PopUpView" customModule="ManToManLayoutSideMenu" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="379" height="510"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FbC-qM-Dow">
+                            <rect key="frame" x="0.0" y="0.0" width="379" height="510"/>
+                            <connections>
+                                <action selector="onClickCoverButton:" destination="Yng-xH-ImC" eventType="touchUpInside" id="4yV-SU-d9U"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q0R-z6-mgt" customClass="View" customModule="ManToManLayoutSideMenu" customModuleProvider="target">
+                            <rect key="frame" x="4" y="20" width="371" height="128"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="128" id="lP0-tA-1Zy"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YCW-PN-F9V">
+                            <rect key="frame" x="4" y="156" width="240" height="39"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="q0R-z6-mgt" firstAttribute="top" secondItem="lhj-Sl-meN" secondAttribute="top" id="8dQ-CB-mqo"/>
+                        <constraint firstItem="FbC-qM-Dow" firstAttribute="bottom" secondItem="lhj-Sl-meN" secondAttribute="bottom" id="XBy-Ey-MpC"/>
+                        <constraint firstItem="lhj-Sl-meN" firstAttribute="trailing" secondItem="q0R-z6-mgt" secondAttribute="trailing" constant="4" id="Zum-BL-QCV"/>
+                        <constraint firstItem="lhj-Sl-meN" firstAttribute="trailing" secondItem="FbC-qM-Dow" secondAttribute="trailing" id="d8d-3g-zKK"/>
+                        <constraint firstItem="FbC-qM-Dow" firstAttribute="top" secondItem="Yng-xH-ImC" secondAttribute="top" id="hYp-nR-T8d"/>
+                        <constraint firstItem="q0R-z6-mgt" firstAttribute="leading" secondItem="lhj-Sl-meN" secondAttribute="leading" constant="4" id="sPq-JQ-OZb"/>
+                        <constraint firstItem="FbC-qM-Dow" firstAttribute="leading" secondItem="lhj-Sl-meN" secondAttribute="leading" id="xe7-qn-16k"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="lhj-Sl-meN"/>
+                    <connections>
+                        <outlet property="coverButton" destination="FbC-qM-Dow" id="QNM-y0-ocB"/>
+                        <outlet property="neckView" destination="YCW-PN-F9V" id="lDF-VE-FPo"/>
+                    </connections>
+                </view>
             </objects>
+            <point key="canvasLocation" x="399" y="-409"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Eqd-Sr-n0g">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Fod-B1-W7v" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bVb-St-iUH">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Upr-e2-8dr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Its-xv-kXJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-554" y="-408"/>
         </scene>
     </scenes>
 </document>

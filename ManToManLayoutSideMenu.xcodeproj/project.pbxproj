@@ -13,6 +13,9 @@
 		972BE0F322895D03003D7F80 /* ManToManLayoutSideMenu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 972BE0F122895D03003D7F80 /* ManToManLayoutSideMenu.xcdatamodeld */; };
 		972BE0F522895D04003D7F80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 972BE0F422895D04003D7F80 /* Assets.xcassets */; };
 		972BE0F822895D04003D7F80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 972BE0F622895D04003D7F80 /* LaunchScreen.storyboard */; };
+		972BE10022895D90003D7F80 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972BE0FF22895D90003D7F80 /* Button.swift */; };
+		972BE102228962A1003D7F80 /* ExtentionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972BE101228962A1003D7F80 /* ExtentionView.swift */; };
+		972BE10422896540003D7F80 /* PopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972BE10322896540003D7F80 /* PopUpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		972BE0F422895D04003D7F80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		972BE0F722895D04003D7F80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		972BE0F922895D04003D7F80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		972BE0FF22895D90003D7F80 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		972BE101228962A1003D7F80 /* ExtentionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtentionView.swift; sourceTree = "<group>"; };
+		972BE10322896540003D7F80 /* PopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,9 @@
 				972BE0EA22895D03003D7F80 /* AppDelegate.swift */,
 				972BE0EC22895D03003D7F80 /* ViewController.swift */,
 				972BE0EE22895D03003D7F80 /* Main.storyboard */,
+				972BE10322896540003D7F80 /* PopUpView.swift */,
+				972BE101228962A1003D7F80 /* ExtentionView.swift */,
+				972BE0FF22895D90003D7F80 /* Button.swift */,
 				972BE0F422895D04003D7F80 /* Assets.xcassets */,
 				972BE0F622895D04003D7F80 /* LaunchScreen.storyboard */,
 				972BE0F922895D04003D7F80 /* Info.plist */,
@@ -141,6 +150,9 @@
 				972BE0F322895D03003D7F80 /* ManToManLayoutSideMenu.xcdatamodeld in Sources */,
 				972BE0ED22895D03003D7F80 /* ViewController.swift in Sources */,
 				972BE0EB22895D03003D7F80 /* AppDelegate.swift in Sources */,
+				972BE10422896540003D7F80 /* PopUpView.swift in Sources */,
+				972BE102228962A1003D7F80 /* ExtentionView.swift in Sources */,
+				972BE10022895D90003D7F80 /* Button.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
